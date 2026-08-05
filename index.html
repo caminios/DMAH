@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUCKMAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">DUCKMAN</div>
+        <div class="menu-icon" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" id="close-btn">&times;</a>
+        <!-- Förberedda länkar för framtiden -->
+        <a href="#" class="disabled-link">Art for sale</a>
+        <a href="#" class="disabled-link">About</a>
+    </nav>
+
+    <main>
+        <div class="ascii-art">
+    __
+  <(o )___
+   ( ._> /
+    `---'
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Duckman Antihero
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sideMenu = document.getElementById('side-menu');
+        const closeBtn = document.getElementById('close-btn');
+
+        // Öppna menyn
+        menuToggle.addEventListener('click', () => {
+            sideMenu.style.width = "250px";
+        });
+
+        // Stäng menyn
+        closeBtn.addEventListener('click', () => {
+            sideMenu.style.width = "0";
+        });
+    </script>
+</body>
+</html>

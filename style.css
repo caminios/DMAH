@@ -1,0 +1,115 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Monospace passar ASCII-temat */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Hamburgermeny-ikonen */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    z-index: 2;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+/* Sidomeny (off-canvas) */
+.side-menu {
+    height: 100%;
+    width: 0; /* Gömst som standard */
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: #111111;
+    overflow-x: hidden;
+    transition: 0.3s ease-in-out;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #333;
+}
+
+.side-menu a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #888888;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover:not(.disabled-link) {
+    color: #ffffff;
+}
+
+/* Framtida länkar */
+.disabled-link {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none; /* Inaktiverar klick tills de är redo */
+}
+
+/* Stäng-knapp i menyn */
+.side-menu .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 40px;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Huvudinnehåll (ASCII Art) */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ascii-art {
+    font-size: 2rem;
+    line-height: 1.1;
+    white-space: pre; /* Bevarar radbrytningar och mellanslag exakt */
+}
+
+/* Sidfot */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666666;
+    letter-spacing: 1px;
+}
