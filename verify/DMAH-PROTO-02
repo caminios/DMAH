@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTIFACT REGISTRY - PROTO-01</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #00FF00; /* Terminal Green */
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        .terminal {
+            max-width: 600px;
+            width: 100%;
+            /* pre-wrap ensures the ASCII art keeps its shape but long text wraps on mobile */
+            white-space: pre-wrap; 
+            word-wrap: break-word;
+            line-height: 1.4;
+        }
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.1em;
+            background-color: #00FF00;
+            vertical-align: text-bottom;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="terminal">SECURE CONNECTION ESTABLISHED.
+ACCESSING REGISTRY...
+                                         
+                                                                                 
+                                      ............                               
+                              ...........................                        
+                          .........@@@@@@@@@@@@@@@@@@=:......                    
+                      .......:@@@@@@@@@@@@@@@@@@@@@@@@@@@@.......                
+                   ......=@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.....              
+                 .....@@@@@@@@@@@@@@@@@@@. @@@@@@@@@@@@@@@@@@@@@*....            
+               .....@@..@@@@@@@@@@@@@@@@@. @@@@@@@@@@@@ ..@@@@@@@@*...           
+             .....@@@@@...@@@@@@@@@@@@@@.  @@@@@@@@ @@....@@@@@@@@@@....         
+           .....@@@@@@@.....@@@@@@@@@@@..  @@@@@@.........@@@@@@@@@@@#...        
+          .....@@@@@@@@@.......@@@@@@@..    @@@@ .....@@. :@@@@@@@@@@@@...       
+         ....@@@@@@@@@@@.@@@.....@@@@@..    @@@..*@@-@@@...@@@@@@@@@@@@-...      
+        ....@@@@@@@@@@%..........@@@@...    @@@@@@@@@@@@@...@@@@@@@@@@@@...      
+       ....@@@@@@@@@@@@.-.#@@@@@@@@@-..     %@@@@@@@@@@@@@..*@@@@@@@@@@@#...     
+      ....@@@@@@@@@@@@@@@@@@@@.........   ..........@@@@@@@@@@@@@@@@@@@@@...     
+     .....@@@@@@@@@@................... ........................@@@@@@@@@...     
+     ....@@@@@@@@@@@...................  ..................@@@@@@@@@@@@@@...     
+     ....@@@@@@@@@@@@@@@@@@@@@.........    .....%@@@@@@@@@@@@@@@@@@@@@@@@...     
+     . ..@@@@@@@@@@@@@@@@@@@@@@@@@@...     +@@@@@@@@@@@@@@@@@@@@@@@@@@@@....     
+     ...:@@@@@@@@@@@@@@...+@@@@@@@@...     @@@@@@...=@@...=@@@@@@@@@@@@@....     
+     ....@@@@@@@@@@@@.....@@@@@@@@@...    @@@@@@@@...@@@...@@@@@@@@@@@@....      
+     ....@@@@@@@@@@@......@@@@@@@@@@..   .@@@@@@@@..+@@@...@@@@@@@@@@@.....      
+     ....@@@@@@@@@@...@....@@@@@@@@@..   @@@@@@@...........@@@@@@@@@@.....       
+      ....@@@@@@@...........@@@@@@@@..  @@@@@@@..............@@@@@@@.....        
+      ....=@@@@@...@@@@@.....@@@@@@@..  @@@@@@@@@...@@@...@@@@@@@@@.....         
+       .....@@@@@@@@@@@@@=....@@@@@@:. @@@@@@@@@@...@@@...@@@@@@@......          
+        .....@@@@@@@@@@@@@@...@@@@@@@ @@@@@@@@@@@..@@@...@@@@@@......@           
+          ....@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@.......@            
+           .....@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.......@              
+             .....*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@........@                
+               .......@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.........@                   
+                  .........@@@@@@@@@@@@@@@@@@@............@@                     
+                    @..................................@                         
+                        @.........................@@                             
+                              *%@@@@@@@@@@@@@-                                   
+                                                                              
+
+ARTIFACT VERIFICATION SYSTEM
+========================================
+STATUS:       AUTHENTICATED
+DESIGNATION:  ARTIST PROOF (UNRELEASED)
+ID CODE:      PROTO-01 [0xDF-00]
+ORIGIN:       STOCKHOLM
+MATERIAL:     PHOTOLUMINESCENT PLA
+========================================
+
+> RECORD LOG:
+This artifact is a physical anchor. It is the first of its kind to be registered outside the primary network. 
+
+To the current holder: 
+You have been granted this prototype prior to the public deployment. Keep it secure. The luminescence is not just an aesthetic choice; it is a marker. 
+
+When the time comes, you will know where to look.
+
+> END OF TRANSMISSION.<span class="cursor"></span></div>
+
+</body>
+</html>
