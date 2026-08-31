@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL ACCESS - 1978</title>
+    <style>
+        body {
+            background-color: #12100e;
+            color: #ffb000; /* Klassisk 70-tals amber-skärm färg */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .terminal {
+            background-color: #1c1814;
+            border: 4px solid #ffb000;
+            padding: 2rem;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 0 25px rgba(255, 176, 0, 0.2);
+        }
+        h2 {
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px dashed #ffb000;
+            padding-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        input {
+            width: 100%;
+            background: #000;
+            border: 2px solid #ffb000;
+            color: #ffb000;
+            padding: 0.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            margin-top: 0.3rem;
+            box-sizing: border-box;
+        }
+        input:focus {
+            outline: none;
+            background: #2a2218;
+        }
+        button {
+            width: 100%;
+            background-color: #ffb000;
+            color: #12100e;
+            border: none;
+            padding: 0.8rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        button:hover {
+            background-color: #ffc843;
+        }
+        #error-msg {
+            color: #ff4444;
+            margin-top: 1rem;
+            display: none;
+            font-size: 0.8rem;
+        }
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 14px;
+            background: #ffb000;
+            animation: blink 1s infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="terminal">
+    <h2>SYSTEM LOGIN v1.78</h2>
+    <p style="font-size: 0.75rem; color: #cc8800; margin-bottom: 1.5rem;">ENTER CREDENTIALS TO PROCEED<span class="cursor"></span></p>
+    
+    <div id="error-msg">> ACCESS DENIED: INVALID CREDENTIALS</div>
+    
+    <label for="username">> USERNAME:</label>
+    <input type="text" id="username" autocomplete="off" required>
+    
+    <label for="password">> PASSWORD:</label>
+    <input type="password" id="password" required>
+    
+    <button onclick="checkLogin()">EXECUTE LOGIN</button>
+</div>
+
+<script>
+    function checkLogin() {
+        var inputUsername = document.getElementById('username').value;
+        var inputPassword = document.getElementById('password').value;
+
+        // --- ÄNDRA DESSA VÄRDEN TILL DINA EGNA ---
+        var correctUsername = "Howard";
+        var correctPassword = "D4FFY";
+        // ----------------------------------------
+
+        if (inputUsername === correctUsername && inputPassword === correctPassword) {
+            window.location.href = "hemlighet.html";
+        } else {
+            document.getElementById('error-msg').style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
