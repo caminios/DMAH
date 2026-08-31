@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTRICTED AREA - CLAIM PRIZE</title>
+    <style>
+        body {
+            background-color: #12100e;
+            color: #ffb000;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .terminal {
+            background-color: #1c1814;
+            border: 4px solid #ffb000;
+            padding: 2rem;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 0 0 25px rgba(255, 176, 0, 0.2);
+        }
+        h2 {
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px dashed #ffb000;
+            padding-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 0.8rem;
+            color: #cc8800;
+            line-height: 1.4;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        input, textarea {
+            width: 100%;
+            background: #000;
+            border: 2px solid #ffb000;
+            color: #ffb000;
+            padding: 0.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            margin-top: 0.3rem;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            background: #2a2218;
+        }
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+        button {
+            width: 100%;
+            background-color: #ffb000;
+            color: #12100e;
+            border: none;
+            padding: 0.8rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        button:hover {
+            background-color: #ffc843;
+        }
+    </style>
+</head>
+<body>
+
+<div class="terminal">
+    <h2>ACCESS GRANTED</h2>
+    <p>Welcome Howard! Fill out the form below to recieve your parcel</p>
+    
+    <!-- Formuläret som skapar ett e-postmeddelande till din adress -->
+    <form action="mailto:caminios+DMAH@gmail.com" method="POST" enctype="text/plain">
+        
+        <label for="name">> DITT NAMN / HANDLE:</label>
+        <input type="text" id="name" name="Namn" required autocomplete="off">
+        
+        <label for="contact">> KONTAKTINFO (E-POST/TEL):</label>
+        <input type="text" id="contact" name="Kontakt" required autocomplete="off">
+        
+        <label for="message">> MEDDELANDE / KOD:</label>
+        <textarea id="message" name="Meddelande">Här är jag! Jag vill claima priset.</textarea>
+        
+        <button type="submit">SKICKA CLAIM</button>
+    </form>
+</div>
+
+</body>
+</html>
